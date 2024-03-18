@@ -6,7 +6,7 @@ This project uses Udacity's Tennis environment which based on the Unity engine. 
 <img src="https://github.com/CSiler/udacity-tennis-ddpg/assets/6819661/2b428c50-306d-4b9f-905c-6ac572ed604e" width="50%" >
 
 
-The action space is continuous and consists of two parameters assuming values from -1 to +1 representing thrust applied to the tennis racket of each agent in x- and y-directions. The environment responds with 24 state variables, representing three consequetive time frames whith 8 variables each, including velocity and location of ball and racket.
+The action space is continuous and consists of two parameters assuming values from -1 to +1 representing thrust applied to the tennis racket of each agent in x- and y-directions. The environment responds with 24 state variables, representing three consecutive time frames with 8 variables each, including velocity and location of ball and racket.
 
 An agent receives a reward of .1 when it plays the ball across the net and a reward of -.1 when it lets the ball drop to the ground in its field. 
 
