@@ -40,4 +40,4 @@ This project uses a version of the Tennis environment with two agents. To obtain
 
 For a headless version for Linux, [click here.](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux_NoVis.zip)
 
-In order to train the agent, open [Tennis.ipynb](https://github.com/CSiler/udacity-ddpg/blob/main/Tennis.ipynb) in this repository.
+In order to train the agent, open [Tennis.ipynb](https://github.com/CSiler/udacity-tennis-ddpg/blob/main/Tennis.ipynb) in this repository.
