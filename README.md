@@ -31,8 +31,6 @@ Download the [requirements.txt](https://github.com/CSiler/udacity-ddpg/blob/main
 python -m pip install -r requirements.txt
 ```
 
-
-
 ## Instructions
 This project uses a version of the Tennis environment with two agents. To obtain the corresponding executable 
 - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
@@ -41,3 +39,5 @@ This project uses a version of the Tennis environment with two agents. To obtain
 - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
 
 For a headless version for Linux, [click here.](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux_NoVis.zip)
+
+In order to train the agent, open [Tennis.ipynb](https://github.com/CSiler/udacity-ddpg/blob/main/Tennis.ipynb) in this repository.
