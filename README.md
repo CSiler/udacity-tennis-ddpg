@@ -1,12 +1,16 @@
-# Solving Udacity's Reacher Challenge With DDPG Reinforcement Learning
+# Keep the Tennis Ball in the Air with DDPG Reinforcement Learning
 ## Project Details
-This project uses the Reacher environment based on the Unity engine. The agent which is coded in this project controls a robot arm consisting of two joints. The goal is to keep the end of the arm inside a target sphere which circles around the base of the arm at varying speeds and direction. 
+This project uses Udacity's Tennis environment which based on the Unity engine. Subject of this challenge is to control two agents playing a version of Tennis with each other in which the ball should never touch the net or the ground.
 
-![reacher](https://github.com/CSiler/udacity-ddpg/assets/6819661/b3a14597-0c25-473d-96b7-4f62cc0c6565)
 
-The action space therefore consists of four parameters controlling torque applied to each joint in the range -1 to +1. The environment responds with 33 state variables describing position, rotation, velocity and angular velocity of the arm.
+<img src="https://github.com/CSiler/udacity-tennis-ddpg/assets/6819661/2b428c50-306d-4b9f-905c-6ac572ed604e" width="50%" >
 
-The environment is considered solved when an average score of at least 30 points has been reached over 100 consecutive periods.
+
+The action space is continuous and consists of two parameters assuming values from -1 to +1 representing thrust applied to the tennis racket of each agent in x- and y-directions. The environment responds with 24 state variables, representing three consequetive time frames whith 8 variables each, including velocity and location of ball and racket.
+
+An agent receives a reward of .1 when it plays the ball across the net and a reward of -.1 when it lets the ball drop to the ground in its field. 
+
+In order to solve the environment, episodes are counted with the maximum of each player's points. The average of that maximum score must reach .5 over the last 100 episodes.
 
 ## Getting Started
 
@@ -30,16 +34,10 @@ python -m pip install -r requirements.txt
 
 
 ## Instructions
-This project uses a version of the Reacher environment with one agent. To obtain the corresponding executable for Linux please click [here.](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
+This project uses a version of the Tennis environment with two agents. To obtain the corresponding executable 
+- Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
+- Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
+- Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip)
+- Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
 
-Alternatively please [click here for a headless version.](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux_NoVis.zip)
-
-If you are using a different operating system or would like to use the version with 20 agents instead of one, please consult [this GitHub repository](https://github.com/MathiasGruber/ReacherAgent-PyTorch).
-
-To train the agent run the Jupyter notebook [training.ipynb](https://github.com/CSiler/udacity-ddpg/blob/main/training.ipynb) from this repository. Before you start, please make sure the link to the Reacher environment inside the notebook points to the right location on your drive.
-
-
-
-
-
-
+For a headless version for Linux, [click here.](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux_NoVis.zip)
